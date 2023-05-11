@@ -1,11 +1,11 @@
 import OMPython
 from OMPython import OMCSessionZMQ
-omc=OMPython.OMCSession()
-model_file ='getInstallationDirectoryPath() + "/share/doc/omc/testmodels/BouncingBall.mo'
+#omc=OMPython.OMCSession() # error with the command : locale.Error: unsupported locale setting OMC did not exit after being sent the quit() command; killing the process with pid=18336
+model_file ='HeatingSystemfonctionall.mo'
 omc = OMCSessionZMQ()
 cmds = [
-  'loadFile(getInstallationDirectoryPath() + "/share/doc/omc/testmodels/BouncingBall.mo")',
-  "simulate(BouncingBall)",
+  'loadFile("HeatingSystemfonctional.mo")',
+  "simulate(HeatingSystemfonctional)",
   "plot(h)"
   ]
 for cmd in cmds:
