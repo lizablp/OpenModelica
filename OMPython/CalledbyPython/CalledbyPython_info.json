@@ -1,0 +1,20 @@
+{"format":"Transformational debugger info","version":1,
+"info":{"name":"CalledbyPython","description":""},
+"variables":{
+"x":{"comment":"","kind":"state","type":"Real","unit":"","displayUnit":"","source":{"info":{"file":"C:/Users/Lizab/workspace/OpenModelica/OMPython/CalledbyPython/CalledbyPython.mo","lineStart":2,"lineEnd":2,"colStart":3,"colEnd":34}}},
+"y":{"comment":"","kind":"state","type":"Real","unit":"","displayUnit":"","source":{"info":{"file":"C:/Users/Lizab/workspace/OpenModelica/OMPython/CalledbyPython/CalledbyPython.mo","lineStart":2,"lineEnd":2,"colStart":3,"colEnd":34}}},
+"der(x)":{"comment":"","kind":"derivative","type":"Real","unit":"","displayUnit":"","source":{"info":{"file":"C:/Users/Lizab/workspace/OpenModelica/OMPython/CalledbyPython/CalledbyPython.mo","lineStart":2,"lineEnd":2,"colStart":3,"colEnd":34}}},
+"der(y)":{"comment":"","kind":"derivative","type":"Real","unit":"","displayUnit":"","source":{"info":{"file":"C:/Users/Lizab/workspace/OpenModelica/OMPython/CalledbyPython/CalledbyPython.mo","lineStart":2,"lineEnd":2,"colStart":3,"colEnd":34}}},
+"b":{"comment":"","kind":"parameter","type":"Real","unit":"","displayUnit":"","source":{"info":{"file":"C:/Users/Lizab/workspace/OpenModelica/OMPython/CalledbyPython/CalledbyPython.mo","lineStart":3,"lineEnd":3,"colStart":3,"colEnd":25}}}
+},
+"equations":[{"eqIndex":0,"tag":"dummy"},
+{"eqIndex":1,"section":"initial","tag":"assign","defines":["y"],"uses":["$START.y"],"equation":["$START.y"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":2,"tag":"alias","equation":[6],"section":"initial"},
+{"eqIndex":3,"section":"initial","tag":"assign","defines":["x"],"uses":["$START.x"],"equation":["$START.x"],"source":{"info":{"file":"","lineStart":0,"lineEnd":0,"colStart":0,"colEnd":0}}},
+{"eqIndex":4,"tag":"alias","equation":[5],"section":"initial"},
+{"eqIndex":5,"section":"regular","tag":"assign","defines":["der(y)"],"uses":["x"],"equation":["x"],"source":{"info":{"file":"C:/Users/Lizab/workspace/OpenModelica/OMPython/CalledbyPython/CalledbyPython.mo","lineStart":6,"lineEnd":6,"colStart":3,"colEnd":13}}},
+{"eqIndex":6,"section":"regular","tag":"assign","defines":["der(x)"],"uses":["y","b"],"equation":["(-b) * y"],"source":{"info":{"file":"C:/Users/Lizab/workspace/OpenModelica/OMPython/CalledbyPython/CalledbyPython.mo","lineStart":5,"lineEnd":5,"colStart":3,"colEnd":16}}}
+],
+"functions":[
+]
+}

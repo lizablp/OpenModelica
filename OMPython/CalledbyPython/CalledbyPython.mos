@@ -1,0 +1,3 @@
+loadFile("CalledbyPython.mo");
+setComponentModifierValue(CalledbyPython,b,$Code(="+str(newb)+"));
+simulate(CalledbyPython,stopTime=10);
