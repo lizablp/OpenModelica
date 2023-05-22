@@ -309,7 +309,7 @@ void CalledbyPython_setupDataStruc(DATA *data, threadData_t *threadData)
   data->modelData->modelFilePrefix = "CalledbyPython";
   data->modelData->resultFileName = NULL;
   data->modelData->modelDir = "C:/Users/Lizab/workspace/OpenModelica/OMPython/CalledbyPython";
-  data->modelData->modelGUID = "{0c10b7c9-5f2c-47e2-9119-1b3e63012897}";
+  data->modelData->modelGUID = "{3596e231-efab-4ffc-b19a-0056acd0126f}";
   #if defined(OPENMODELICA_XML_FROM_FILE_AT_RUNTIME)
   data->modelData->initXMLData = NULL;
   data->modelData->modelDataXml.infoXMLData = NULL;

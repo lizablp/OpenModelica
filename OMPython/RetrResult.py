@@ -20,13 +20,7 @@ omc.sendExpression(f'simulate(CalledbyPython, outputFormat="csv")')
 # Read the CSV file
 csv_file = "CalledbyPython_res.csv"  # Replace with the actual file name and path if necessary
 results = pd.read_csv(csv_file)
-# try:
-#     results = pd.read_csv(csv_file)
-#     print('HELLO')
-# except FileNotFoundError:
-#     print(f"Error: File '{csv_file}' not found. Please verify the file name and path.")
 
-# results = pd.read_csv(csv_file)
 # Inspect the column names
 print(results.columns)
 
@@ -52,24 +46,20 @@ plt.legend()
 plt.show()
 plt.savefig("CalledbyPython_res.jpg")
 
-
-def zeros(n): #
+def zeros(n): 
     vec = [0.0]
     for i in range(int(n)-1): vec = vec + [0.0]
     return vec
-#res_file = open("CalledbyPython_res.jpg",'rb',1)
-with open("CalledbyPython_res.jpg", 'rb') as res_file:
-    line = res_file.read()
-    size = int(line.split('=')[1])
-#line = res_file.readline().decode('utf-8')
-#size = int(res_file.readline().split('=')[1])
+res_file = open("CalledbyPython_res.plt",'r',1)
+line = res_file.readline()
+size = int(res_file.readline().split('=')[1])
 time = zeros(size)
 y = zeros(size)
-while line != ['DataSet: time\\n']:
+while line != ['DataSet: time\n']:
     line = res_file.readline().split(',')[0:1]
 for j in range(int(size)):
     time[j] = float(res_file.readline().split(',')[0])
-while line != ['DataSet: y\\n']:
+while line != ['DataSet: y\n']:
     line=res_file.readline().split(',')[0:1]
 for j in range(int(size)):
     y[j]=float(res_file.readline().split(',')[1])

@@ -1,6 +1,16 @@
 #!/usr/bin/python
-import sys,os
-global newb = 0.5
-execfile('CreateMosFile.py')
+import os
+global newb
+newb= 0.5
+
+os.chdir("C:/Users/Lizab/workspace/OpenModelica/OMPython")
+with open('CreateMosFile.py', 'r') as file:
+    code = compile(file.read(), 'CreateMosFile.py', 'exec')
+    exec(code)
+
 os.popen(r"omc CalledbyPython.mos").read()
-execfile('RetrResult.py')
+
+with open('RetrResult.py', 'r') as file:
+    code = compile(file.read(), 'RetrResult.py', 'exec')
+    exec(code)
+
