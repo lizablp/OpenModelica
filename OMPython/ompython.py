@@ -42,7 +42,7 @@ print(mod.getLinearizationOptions())
 print(mod.getLinearInputs())
 print(mod.getLinearOutputs())
 print(mod.getLinearStates())
-mod.simulate(resultfile="C:/Users/Lizab/workspace/OpenModelica/Motoreducteur.mat")
+mod.simulate(resultfile="C:/Users/Lizab/workspace/OpenModelica/OMPython/HeatingSystemFunctional.mat")
 #mod.simulate(simflags="-noEventEmit -noRestart -override=e=0.3,g=9.71") 
 mod.buildModel()
 
