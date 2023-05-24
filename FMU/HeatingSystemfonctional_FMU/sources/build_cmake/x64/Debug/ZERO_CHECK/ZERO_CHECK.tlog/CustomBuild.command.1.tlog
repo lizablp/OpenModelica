@@ -1,0 +1,10 @@
+^C:\USERS\LIZAB\WORKSPACE\OPENMODELICA\FMU\HEATINGSYSTEMFONCTIONAL_FMU\SOURCES\BUILD_CMAKE\CMAKEFILES\8A142EDCA22172A842FC0D2E85042958\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources -BC:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/Modelica_Fluid_Examples_HeatingSystem.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

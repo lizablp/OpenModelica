@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E589621-5524-3DA5-9B5E-454887D901D8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Modelica_Fluid_Examples_HeatingSystem</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Modelica_Fluid_Examples_HeatingSystem.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Modelica_Fluid_Examples_HeatingSystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Modelica_Fluid_Examples_HeatingSystem.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Modelica_Fluid_Examples_HeatingSystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Modelica_Fluid_Examples_HeatingSystem.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Modelica_Fluid_Examples_HeatingSystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Modelica_Fluid_Examples_HeatingSystem.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Modelica_Fluid_Examples_HeatingSystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OMC_MINIMAL_RUNTIME=1;OMC_FMI_RUNTIME=1;CMINPACK_NO_DLL;CMAKE_INTDIR="Debug";Modelica_Fluid_Examples_HeatingSystem_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OMC_MINIMAL_RUNTIME=1;OMC_FMI_RUNTIME=1;CMINPACK_NO_DLL;CMAKE_INTDIR=\"Debug\";Modelica_Fluid_Examples_HeatingSystem_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>m.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/Debug/Modelica_Fluid_Examples_HeatingSystem.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/Debug/Modelica_Fluid_Examples_HeatingSystem.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OMC_MINIMAL_RUNTIME=1;OMC_FMI_RUNTIME=1;CMINPACK_NO_DLL;CMAKE_INTDIR="Release";Modelica_Fluid_Examples_HeatingSystem_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OMC_MINIMAL_RUNTIME=1;OMC_FMI_RUNTIME=1;CMINPACK_NO_DLL;CMAKE_INTDIR=\"Release\";Modelica_Fluid_Examples_HeatingSystem_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>m.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/Release/Modelica_Fluid_Examples_HeatingSystem.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/Release/Modelica_Fluid_Examples_HeatingSystem.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OMC_MINIMAL_RUNTIME=1;OMC_FMI_RUNTIME=1;CMINPACK_NO_DLL;CMAKE_INTDIR="MinSizeRel";Modelica_Fluid_Examples_HeatingSystem_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OMC_MINIMAL_RUNTIME=1;OMC_FMI_RUNTIME=1;CMINPACK_NO_DLL;CMAKE_INTDIR=\"MinSizeRel\";Modelica_Fluid_Examples_HeatingSystem_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>m.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/MinSizeRel/Modelica_Fluid_Examples_HeatingSystem.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/MinSizeRel/Modelica_Fluid_Examples_HeatingSystem.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OMC_MINIMAL_RUNTIME=1;OMC_FMI_RUNTIME=1;CMINPACK_NO_DLL;CMAKE_INTDIR="RelWithDebInfo";Modelica_Fluid_Examples_HeatingSystem_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OMC_MINIMAL_RUNTIME=1;OMC_FMI_RUNTIME=1;CMINPACK_NO_DLL;CMAKE_INTDIR=\"RelWithDebInfo\";Modelica_Fluid_Examples_HeatingSystem_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources;C:\Programmes\OpenModelica\include\omc\c\fmi;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\sundials;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>m.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/RelWithDebInfo/Modelica_Fluid_Examples_HeatingSystem.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/RelWithDebInfo/Modelica_Fluid_Examples_HeatingSystem.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources -BC:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake --check-stamp-file C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources -BC:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake --check-stamp-file C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources -BC:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake --check-stamp-file C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources -BC:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake --check-stamp-file C:/Users/Lizab/workspace/OpenModelica/FMU/HeatingSystemfonctional_FMU/sources/build_cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\3.26.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dgemm.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dger.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dgesv.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dgetf2.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dgetrf.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dgetrs.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dlamch.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dlaswp.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dogleg_.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dpmpar_.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dscal.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dswap.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\dtrsm.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\enorm_.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\hybrj_.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\i_nint.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\idamax.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\ieeeck.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\ilaenv.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\iparmq.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\lsame.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\pow_di.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\qform_.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\qrfac_.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\r1mpyq_.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\r1updt_.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\s_cmp.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\s_copy.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\external_solvers\xerbla.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\gc\memory_pool.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\gc\omc_gc.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\math-support\pivot.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\meta\meta_modelica_catch.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\jacobian_util.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\omc_simulation_util.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\options.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\simulation_info_json.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\simulation_omc_assert.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\delay.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\fmi_events.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\initialization\initialization.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\linearSolverLapack.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\linearSolverTotalPivot.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\linearSystem.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\model_help.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\nonlinearSolverHomotopy.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\nonlinearSolverHybrd.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\nonlinearSystem.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\nonlinearValuesList.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\omc_math.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\spatialDistribution.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\stateset.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\simulation\solver\synchronous.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\ModelicaUtilities.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\base_array.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\boolean_array.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\context.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\division.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\doubleEndedList.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\generic_array.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\index_spec.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\integer_array.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\list.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\modelica_string.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\modelica_string_lit.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\omc_error.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\omc_file.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\omc_init.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\omc_mmap.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\omc_msvc.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\omc_numbers.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\parallel_helper.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\rational.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\real_array.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\ringbuffer.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\simulation_options.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\string_array.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\utility.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\util\varinfo.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_01exo.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_02nls.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_03lsy.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_04set.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_05evt.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_06inz.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_07dly.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_08bnd.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_09alg.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_10asr.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_11mix.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_12jac.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_13opt.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_14lnz.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_15syn.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_16dae.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_17inl.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_18spd.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_FMU.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_functions.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_init_fmu.c" />
+    <ClCompile Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\Modelica_Fluid_Examples_HeatingSystem_records.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\ZERO_CHECK.vcxproj">
+      <Project>{5A3E83F3-C7DF-3C08-A4E9-FB366FA726A0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

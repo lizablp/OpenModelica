@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\8a142edca22172a842fc0d2e85042958\create_zip.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Lizab\workspace\OpenModelica\FMU\HeatingSystemfonctional_FMU\sources\build_cmake\CMakeFiles\create_zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{35DFD4D4-6F1D-3B5C-9509-441CD1E1D70D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
