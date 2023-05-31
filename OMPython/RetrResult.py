@@ -50,6 +50,7 @@ def zeros(n):
     vec = [0.0]
     for i in range(int(n)-1): vec = vec + [0.0]
     return vec
+print (zeros(5))
 res_file = open("CalledbyPython_res.plt",'r',1)
 line = res_file.readline()
 size = int(res_file.readline().split('=')[1])
