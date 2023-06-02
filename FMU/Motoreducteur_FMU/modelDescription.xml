@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="2.0"
+  modelName="Motoreducteur"
+  guid="{8f910c94-4db5-44a9-ba5f-219ef7355db0}"
+  description=""
+  generationTool="OpenModelica Compiler OpenModelica v1.21.0 (64-bit)"
+  generationDateAndTime="2023-05-30T18:34:15Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="9">
+  <ModelExchange
+    modelIdentifier="Motoreducteur">
+    <SourceFiles>
+      <File name="Motoreducteur.c" />
+      <File name="Motoreducteur_functions.c" />
+      <File name="Motoreducteur_records.c" />
+      <File name="Motoreducteur_01exo.c" />
+      <File name="Motoreducteur_02nls.c" />
+      <File name="Motoreducteur_03lsy.c" />
+      <File name="Motoreducteur_04set.c" />
+      <File name="Motoreducteur_05evt.c" />
+      <File name="Motoreducteur_06inz.c" />
+      <File name="Motoreducteur_07dly.c" />
+      <File name="Motoreducteur_08bnd.c" />
+      <File name="Motoreducteur_09alg.c" />
+      <File name="Motoreducteur_10asr.c" />
+      <File name="Motoreducteur_11mix.c" />
+      <File name="Motoreducteur_12jac.c" />
+      <File name="Motoreducteur_13opt.c" />
+      <File name="Motoreducteur_14lnz.c" />
+      <File name="Motoreducteur_15syn.c" />
+      <File name="Motoreducteur_16dae.c" />
+      <File name="Motoreducteur_17inl.c" />
+      <File name="Motoreducteur_18spd.c" />
+      <File name="Motoreducteur_init_fmu.c" />
+      <File name="Motoreducteur_FMU.c" />
+      <File name="./gc/memory_pool.c" />
+      <File name="./gc/omc_gc.c" />
+      <File name="./util/base_array.c" />
+      <File name="./util/boolean_array.c" />
+      <File name="./util/context.c" />
+      <File name="./util/division.c" />
+      <File name="./util/doubleEndedList.c" />
+      <File name="./util/generic_array.c" />
+      <File name="./util/index_spec.c" />
+      <File name="./util/integer_array.c" />
+      <File name="./util/list.c" />
+      <File name="./util/modelica_string_lit.c" />
+      <File name="./util/modelica_string.c" />
+      <File name="./util/ModelicaUtilities.c" />
+      <File name="./util/omc_error.c" />
+      <File name="./util/omc_file.c" />
+      <File name="./util/omc_init.c" />
+      <File name="./util/omc_mmap.c" />
+      <File name="./util/omc_msvc.c" />
+      <File name="./util/omc_numbers.c" />
+      <File name="./util/parallel_helper.c" />
+      <File name="./util/rational.c" />
+      <File name="./util/real_array.c" />
+      <File name="./util/ringbuffer.c" />
+      <File name="./util/simulation_options.c" />
+      <File name="./util/string_array.c" />
+      <File name="./util/utility.c" />
+      <File name="./util/varinfo.c" />
+      <File name="./math-support/pivot.c" />
+      <File name="./simulation/jacobian_util.c" />
+      <File name="./simulation/omc_simulation_util.c" />
+      <File name="./simulation/options.c" />
+      <File name="./simulation/simulation_info_json.c" />
+      <File name="./simulation/simulation_omc_assert.c" />
+      <File name="./simulation/solver/delay.c" />
+      <File name="./simulation/solver/fmi_events.c" />
+      <File name="./simulation/solver/model_help.c" />
+      <File name="./simulation/solver/omc_math.c" />
+      <File name="./simulation/solver/spatialDistribution.c" />
+      <File name="./simulation/solver/stateset.c" />
+      <File name="./simulation/solver/synchronous.c" />
+      <File name="./simulation/solver/initialization/initialization.c" />
+      <File name="./meta/meta_modelica_catch.c" />
+      <File name="./simulation/solver/nonlinearSolverHomotopy.c" />
+      <File name="./simulation/solver/nonlinearSolverHybrd.c" />
+      <File name="./simulation/solver/nonlinearValuesList.c" />
+      <File name="./simulation/solver/nonlinearSystem.c" />
+    </SourceFiles>
+  </ModelExchange>
+  <CoSimulation
+    modelIdentifier="Motoreducteur"
+    needsExecutionTool="false"
+    canHandleVariableCommunicationStepSize="true"
+    canInterpolateInputs="true"
+    maxOutputDerivativeOrder="1"
+    canRunAsynchronuously = "false"
+    canBeInstantiatedOnlyOncePerProcess="false"
+    canNotUseMemoryManagementFunctions="false"
+    canGetAndSetFMUstate="false"
+    canSerializeFMUstate="false"
+    providesDirectionalDerivative="false">
+    <SourceFiles>
+      <File name="Motoreducteur.c" />
+      <File name="Motoreducteur_functions.c" />
+      <File name="Motoreducteur_records.c" />
+      <File name="Motoreducteur_01exo.c" />
+      <File name="Motoreducteur_02nls.c" />
+      <File name="Motoreducteur_03lsy.c" />
+      <File name="Motoreducteur_04set.c" />
+      <File name="Motoreducteur_05evt.c" />
+      <File name="Motoreducteur_06inz.c" />
+      <File name="Motoreducteur_07dly.c" />
+      <File name="Motoreducteur_08bnd.c" />
+      <File name="Motoreducteur_09alg.c" />
+      <File name="Motoreducteur_10asr.c" />
+      <File name="Motoreducteur_11mix.c" />
+      <File name="Motoreducteur_12jac.c" />
+      <File name="Motoreducteur_13opt.c" />
+      <File name="Motoreducteur_14lnz.c" />
+      <File name="Motoreducteur_15syn.c" />
+      <File name="Motoreducteur_16dae.c" />
+      <File name="Motoreducteur_17inl.c" />
+      <File name="Motoreducteur_18spd.c" />
+      <File name="Motoreducteur_init_fmu.c" />
+      <File name="Motoreducteur_FMU.c" />
+      <File name="./gc/memory_pool.c" />
+      <File name="./gc/omc_gc.c" />
+      <File name="./util/base_array.c" />
+      <File name="./util/boolean_array.c" />
+      <File name="./util/context.c" />
+      <File name="./util/division.c" />
+      <File name="./util/doubleEndedList.c" />
+      <File name="./util/generic_array.c" />
+      <File name="./util/index_spec.c" />
+      <File name="./util/integer_array.c" />
+      <File name="./util/list.c" />
+      <File name="./util/modelica_string_lit.c" />
+      <File name="./util/modelica_string.c" />
+      <File name="./util/ModelicaUtilities.c" />
+      <File name="./util/omc_error.c" />
+      <File name="./util/omc_file.c" />
+      <File name="./util/omc_init.c" />
+      <File name="./util/omc_mmap.c" />
+      <File name="./util/omc_msvc.c" />
+      <File name="./util/omc_numbers.c" />
+      <File name="./util/parallel_helper.c" />
+      <File name="./util/rational.c" />
+      <File name="./util/real_array.c" />
+      <File name="./util/ringbuffer.c" />
+      <File name="./util/simulation_options.c" />
+      <File name="./util/string_array.c" />
+      <File name="./util/utility.c" />
+      <File name="./util/varinfo.c" />
+      <File name="./math-support/pivot.c" />
+      <File name="./simulation/jacobian_util.c" />
+      <File name="./simulation/omc_simulation_util.c" />
+      <File name="./simulation/options.c" />
+      <File name="./simulation/simulation_info_json.c" />
+      <File name="./simulation/simulation_omc_assert.c" />
+      <File name="./simulation/solver/delay.c" />
+      <File name="./simulation/solver/fmi_events.c" />
+      <File name="./simulation/solver/model_help.c" />
+      <File name="./simulation/solver/omc_math.c" />
+      <File name="./simulation/solver/spatialDistribution.c" />
+      <File name="./simulation/solver/stateset.c" />
+      <File name="./simulation/solver/synchronous.c" />
+      <File name="./simulation/solver/initialization/initialization.c" />
+      <File name="./meta/meta_modelica_catch.c" />
+      <File name="./simulation/solver/nonlinearSolverHomotopy.c" />
+      <File name="./simulation/solver/nonlinearSolverHybrd.c" />
+      <File name="./simulation/solver/nonlinearValuesList.c" />
+      <File name="./simulation/solver/nonlinearSystem.c" />
+    </SourceFiles>
+  </CoSimulation>
+  <UnitDefinitions>
+    <Unit name="1/K">
+      <BaseUnit K="-1" />
+    </Unit>
+    <Unit name="K">
+      <BaseUnit K="1" />
+    </Unit>
+    <Unit name="s">
+      <BaseUnit s="1" />
+    </Unit>
+    <Unit name="kg.m2">
+      <BaseUnit m="2" kg="1" />
+    </Unit>
+    <Unit name="N.m/A">
+      <BaseUnit m="2" s="-2" A="-1" kg="1" />
+    </Unit>
+    <Unit name="Ohm">
+      <BaseUnit m="2" s="-3" A="-2" kg="1" />
+    </Unit>
+    <Unit name="W">
+      <BaseUnit m="2" s="-3" kg="1" />
+    </Unit>
+    <Unit name="1">
+      <BaseUnit />
+    </Unit>
+    <Unit name="rad/s2">
+      <BaseUnit s="-2" />
+    </Unit>
+    <Unit name="A">
+      <BaseUnit A="1" />
+    </Unit>
+    <Unit name="V">
+      <BaseUnit m="2" s="-3" A="-1" kg="1" />
+    </Unit>
+    <Unit name="N.m">
+      <BaseUnit m="2" s="-2" kg="1" />
+    </Unit>
+    <Unit name="Hz">
+      <BaseUnit s="-1" />
+    </Unit>
+    <Unit name="s-2">
+      <BaseUnit s="-2" />
+    </Unit>
+    <Unit name="rad">
+      <BaseUnit />
+    </Unit>
+    <Unit name="rad/s">
+      <BaseUnit s="-1" />
+    </Unit>
+  </UnitDefinitions>
+  <TypeDefinitions>
+    <SimpleType name="StateSelect">
+      <Enumeration>
+        <Item name="never" value="1"/>
+        <Item name="avoid" value="2"/>
+        <Item name="default" value="3"/>
+        <Item name="prefer" value="4"/>
+        <Item name="always" value="5"/>
+      </Enumeration>
+    </SimpleType>
+  </TypeDefinitions>
+  <LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+  </LogCategories>
+  <DefaultExperiment startTime="0.0" stopTime="1.0" tolerance="1e-06"/>
+  <ModelVariables>
+  <!-- Index of variable = "1" -->
+  <ScalarVariable
+    name="inertia.w"
+    valueReference="0"
+    description="Absolute angular velocity of component (= der(phi))"
+    initial="exact">
+    <Real start="0.0" unit="rad/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "2" -->
+  <ScalarVariable
+    name="lossyGear.phi_a"
+    valueReference="1"
+    description="Angle between left shaft flange and support"
+    initial="exact">
+    <Real start="0.0" unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "3" -->
+  <ScalarVariable
+    name="der(inertia.w)"
+    valueReference="2"
+    description="der(Absolute angular velocity of component (= der(phi)))"
+    >
+    <Real derivative="1" unit="s-2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "4" -->
+  <ScalarVariable
+    name="der(lossyGear.phi_a)"
+    valueReference="3"
+    description="der(Angle between left shaft flange and support)"
+    >
+    <Real derivative="2" unit="Hz"/>
+  </ScalarVariable>
+  <!-- Index of variable = "5" -->
+  <ScalarVariable
+    name="der(emf.phi)"
+    valueReference="4"
+    description="Angle of shaft flange with respect to support (= flange.phi - support.phi)"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "6" -->
+  <ScalarVariable
+    name="emf.phi"
+    valueReference="5"
+    description="Angle of shaft flange with respect to support (= flange.phi - support.phi)"
+    >
+    <Real unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "7" -->
+  <ScalarVariable
+    name="emf.tau"
+    valueReference="6"
+    description="Torque of flange"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "8" -->
+  <ScalarVariable
+    name="emf.v"
+    valueReference="7"
+    description="Voltage drop between the two pins"
+    >
+    <Real unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "9" -->
+  <ScalarVariable
+    name="emf.w"
+    valueReference="8"
+    description="Angular velocity of flange relative to support"
+    >
+    <Real unit="rad/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "10" -->
+  <ScalarVariable
+    name="ground.p.i"
+    valueReference="9"
+    description="Current flowing into the pin"
+    initial="exact">
+    <Real start="0.0" unit="A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "11" -->
+  <ScalarVariable
+    name="ground.p.v"
+    valueReference="10"
+    description="Potential at the pin"
+    initial="exact">
+    <Real start="0.0" unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "12" -->
+  <ScalarVariable
+    name="inertia.a"
+    valueReference="11"
+    description="Absolute angular acceleration of component (= der(w))"
+    >
+    <Real unit="rad/s2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "13" -->
+  <ScalarVariable
+    name="inertia.flange_a.tau"
+    valueReference="12"
+    description="Cut torque in the flange"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "14" -->
+  <ScalarVariable
+    name="lossyGear.a_a"
+    valueReference="13"
+    description="Angular acceleration of flange_a with respect to support"
+    >
+    <Real unit="rad/s2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "15" -->
+  <ScalarVariable
+    name="lossyGear.eta_mf1"
+    valueReference="14"
+    description="Mesh efficiency in case that flange_a is driving"
+    >
+    <Real unit="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "16" -->
+  <ScalarVariable
+    name="lossyGear.eta_mf2"
+    valueReference="15"
+    description="Mesh efficiency in case that flange_b is driving"
+    >
+    <Real unit="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "17" -->
+  <ScalarVariable
+    name="lossyGear.flange_a.tau"
+    valueReference="16"
+    description="Cut torque in the flange"
+    initial="approx">
+    <Real start="0.0" unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "18" -->
+  <ScalarVariable
+    name="lossyGear.interpolation_result[1,1]"
+    valueReference="17"
+    description="Result of interpolation in lossTable (= [eta_mf1, eta_mf2, tau_bf1, tau_bf2])"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "19" -->
+  <ScalarVariable
+    name="lossyGear.interpolation_result[1,2]"
+    valueReference="18"
+    description="Result of interpolation in lossTable (= [eta_mf1, eta_mf2, tau_bf1, tau_bf2])"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "20" -->
+  <ScalarVariable
+    name="lossyGear.interpolation_result[1,3]"
+    valueReference="19"
+    description="Result of interpolation in lossTable (= [eta_mf1, eta_mf2, tau_bf1, tau_bf2])"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "21" -->
+  <ScalarVariable
+    name="lossyGear.interpolation_result[1,4]"
+    valueReference="20"
+    description="Result of interpolation in lossTable (= [eta_mf1, eta_mf2, tau_bf1, tau_bf2])"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "22" -->
+  <ScalarVariable
+    name="lossyGear.lossPower"
+    valueReference="21"
+    description="Loss power leaving component via heatPort (&gt; 0, if heat is flowing out of component)"
+    >
+    <Real unit="W"/>
+  </ScalarVariable>
+  <!-- Index of variable = "23" -->
+  <ScalarVariable
+    name="lossyGear.phi_b"
+    valueReference="22"
+    description="Angle between right shaft flange and support"
+    >
+    <Real unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "24" -->
+  <ScalarVariable
+    name="lossyGear.quadrant1"
+    valueReference="24"
+    description="Torque loss if w_a &gt; 0 and flange_a.tau &gt;= 0"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "25" -->
+  <ScalarVariable
+    name="lossyGear.quadrant1_p"
+    valueReference="25"
+    description="Torque loss at w_a = 0+ to determine driving side (flange_a.tau &gt;= 0)"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "26" -->
+  <ScalarVariable
+    name="lossyGear.quadrant2"
+    valueReference="26"
+    description="Torque loss if w_a &gt; 0 and flange_a.tau &lt; 0"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "27" -->
+  <ScalarVariable
+    name="lossyGear.quadrant2_p"
+    valueReference="27"
+    description="Torque loss at w_a = 0+ to determine driving side (flange_a.tau &lt; 0)"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "28" -->
+  <ScalarVariable
+    name="lossyGear.quadrant3"
+    valueReference="28"
+    description="Torque loss if w_a &lt; 0 and flange_a.tau &gt;= 0"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "29" -->
+  <ScalarVariable
+    name="lossyGear.quadrant3_m"
+    valueReference="29"
+    description="Torque loss at w_a = 0- to determine driving side (flange_a.tau &gt;=0)"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "30" -->
+  <ScalarVariable
+    name="lossyGear.quadrant4"
+    valueReference="30"
+    description="Torque loss if w_a &lt; 0 and flange_a.tau &lt; 0"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "31" -->
+  <ScalarVariable
+    name="lossyGear.quadrant4_m"
+    valueReference="31"
+    description="Torque loss at w_a = 0- to determine driving side (flange_a.tau &lt; 0)"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "32" -->
+  <ScalarVariable
+    name="lossyGear.sa"
+    valueReference="32"
+    description="Path parameter for acceleration and torque loss"
+    initial="approx">
+    <Real start="0.0" unit="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "33" -->
+  <ScalarVariable
+    name="lossyGear.tauLoss"
+    valueReference="33"
+    description="Torque loss due to friction in the gear teeth and in the bearings"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "34" -->
+  <ScalarVariable
+    name="lossyGear.tauLossMax"
+    valueReference="34"
+    description="Torque loss for positive speed"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "35" -->
+  <ScalarVariable
+    name="lossyGear.tauLossMax_p"
+    valueReference="35"
+    description="Torque loss for positive speed"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "36" -->
+  <ScalarVariable
+    name="lossyGear.tauLossMin"
+    valueReference="36"
+    description="Torque loss for negative speed"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "37" -->
+  <ScalarVariable
+    name="lossyGear.tauLossMin_m"
+    valueReference="37"
+    description="Torque loss for negative speed"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "38" -->
+  <ScalarVariable
+    name="lossyGear.tau_bf1"
+    valueReference="38"
+    description="Absolute resultant bearing friction torque with respect to flange_a in case that flange_a is driving (= |tau_bf_a*eta_mf1 + tau_bf_b/i|)"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "39" -->
+  <ScalarVariable
+    name="lossyGear.tau_bf2"
+    valueReference="39"
+    description="Absolute resultant bearing friction torque with respect to flange_a in case that flange_b is driving (= |tau_bf_a/eta_mf2 + tau_bf_b/i|)"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "40" -->
+  <ScalarVariable
+    name="lossyGear.tau_bf_a"
+    valueReference="40"
+    description="Bearing friction torque on flange_a side"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "41" -->
+  <ScalarVariable
+    name="lossyGear.tau_eta"
+    valueReference="41"
+    description="Torque that determines the driving side (= if forwardSliding then flange_a.tau-tau_bf_a else if backwardSliding then flange_a.tau+tau_bf_a else flange_a.tau)"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "42" -->
+  <ScalarVariable
+    name="lossyGear.tau_eta_m"
+    valueReference="42"
+    description="tau_eta assuming negative omega"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "43" -->
+  <ScalarVariable
+    name="lossyGear.tau_eta_p"
+    valueReference="43"
+    description="tau_eta assuming positive omega"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "44" -->
+  <ScalarVariable
+    name="resistor.LossPower"
+    valueReference="44"
+    description="Loss power leaving component via heatPort"
+    >
+    <Real unit="W"/>
+  </ScalarVariable>
+  <!-- Index of variable = "45" -->
+  <ScalarVariable
+    name="resistor.R_actual"
+    valueReference="45"
+    description="Actual resistance = R*(1 + alpha*(T_heatPort - T_ref))"
+    >
+    <Real unit="Ohm"/>
+  </ScalarVariable>
+  <!-- Index of variable = "46" -->
+  <ScalarVariable
+    name="resistor.i"
+    valueReference="46"
+    description="Current flowing from pin p to pin n"
+    >
+    <Real unit="A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "47" -->
+  <ScalarVariable
+    name="resistor.v"
+    valueReference="47"
+    description="Voltage drop of the two pins (= p.v - n.v)"
+    >
+    <Real unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "48" -->
+  <ScalarVariable
+    name="torque2.tau"
+    valueReference="50"
+    description="Accelerating torque acting at flange (= -flange.tau)"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "49" -->
+  <ScalarVariable
+    name="const.k"
+    valueReference="51"
+    description="Constant output value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="-0.001"/>
+  </ScalarVariable>
+  <!-- Index of variable = "50" -->
+  <ScalarVariable
+    name="const.y"
+    valueReference="52"
+    description="Connector of Real output signal"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "51" -->
+  <ScalarVariable
+    name="constantVoltage.V"
+    valueReference="53"
+    description="Value of constant voltage"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="6.0" unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "52" -->
+  <ScalarVariable
+    name="constantVoltage.p.v"
+    valueReference="54"
+    description="Potential at the pin"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "53" -->
+  <ScalarVariable
+    name="constantVoltage.v"
+    valueReference="55"
+    description="Voltage drop of the two pins (= p.v - n.v)"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "54" -->
+  <ScalarVariable
+    name="emf.k"
+    valueReference="60"
+    description="Transformation coefficient"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0068" unit="N.m/A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "55" -->
+  <ScalarVariable
+    name="inertia.J"
+    valueReference="61"
+    description="Moment of inertia"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1e-06" min="0.0" unit="kg.m2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "56" -->
+  <ScalarVariable
+    name="lossyGear.lossTable[1,1]"
+    valueReference="64"
+    description="Array for mesh efficiencies and bearing friction depending on speed"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "57" -->
+  <ScalarVariable
+    name="lossyGear.lossTable[1,2]"
+    valueReference="65"
+    description="Array for mesh efficiencies and bearing friction depending on speed"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.9"/>
+  </ScalarVariable>
+  <!-- Index of variable = "58" -->
+  <ScalarVariable
+    name="lossyGear.lossTable[1,3]"
+    valueReference="66"
+    description="Array for mesh efficiencies and bearing friction depending on speed"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.9"/>
+  </ScalarVariable>
+  <!-- Index of variable = "59" -->
+  <ScalarVariable
+    name="lossyGear.lossTable[1,4]"
+    valueReference="67"
+    description="Array for mesh efficiencies and bearing friction depending on speed"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "60" -->
+  <ScalarVariable
+    name="lossyGear.lossTable[1,5]"
+    valueReference="68"
+    description="Array for mesh efficiencies and bearing friction depending on speed"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "61" -->
+  <ScalarVariable
+    name="lossyGear.ratio"
+    valueReference="69"
+    description="Transmission ratio (flange_a.phi/flange_b.phi)"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="19.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "62" -->
+  <ScalarVariable
+    name="ramp.duration"
+    valueReference="73"
+    description="Duration of ramp (= 0.0 gives a Step)"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="5.0" min="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "63" -->
+  <ScalarVariable
+    name="ramp.height"
+    valueReference="74"
+    description="Height of ramps"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="-0.05"/>
+  </ScalarVariable>
+  <!-- Index of variable = "64" -->
+  <ScalarVariable
+    name="ramp.offset"
+    valueReference="75"
+    description="Offset of output signal y"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "65" -->
+  <ScalarVariable
+    name="ramp.startTime"
+    valueReference="76"
+    description="Output y = offset for time &lt; startTime"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "66" -->
+  <ScalarVariable
+    name="resistor.R"
+    valueReference="77"
+    description="Resistance at temperature T_ref"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="4.0" unit="Ohm"/>
+  </ScalarVariable>
+  <!-- Index of variable = "67" -->
+  <ScalarVariable
+    name="resistor.T"
+    valueReference="78"
+    description="Fixed device temperature if useHeatPort = false"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="300.0" unit="K"/>
+  </ScalarVariable>
+  <!-- Index of variable = "68" -->
+  <ScalarVariable
+    name="resistor.T_heatPort"
+    valueReference="79"
+    description="Temperature of heatPort"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="300.0" unit="K"/>
+  </ScalarVariable>
+  <!-- Index of variable = "69" -->
+  <ScalarVariable
+    name="resistor.T_ref"
+    valueReference="80"
+    description="Reference temperature"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="300.15" min="0.0" nominal="300.0" unit="K"/>
+  </ScalarVariable>
+  <!-- Index of variable = "70" -->
+  <ScalarVariable
+    name="resistor.alpha"
+    valueReference="81"
+    description="Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref))"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" unit="1/K"/>
+  </ScalarVariable>
+  <!-- Index of variable = "71" -->
+  <ScalarVariable
+    name="resistor.p.v"
+    valueReference="82"
+    description="Potential at the pin"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "72" -->
+  <ScalarVariable
+    name="torque.flange.tau"
+    valueReference="83"
+    description="Cut torque in the flange"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "73" -->
+  <ScalarVariable
+    name="torque.tau"
+    valueReference="84"
+    description="Accelerating torque acting at flange (= -flange.tau)"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "74" -->
+  <ScalarVariable
+    name="constantVoltage.i"
+    valueReference="85"
+    description="Current flowing from pin p to pin n"
+    >
+    <Real unit="A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "75" -->
+  <ScalarVariable
+    name="constantVoltage.n.i"
+    valueReference="46"
+    description="Current flowing into the pin"
+    >
+    <Real unit="A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "76" -->
+  <ScalarVariable
+    name="constantVoltage.n.v"
+    valueReference="10"
+    description="Potential at the pin"
+    >
+    <Real unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "77" -->
+  <ScalarVariable
+    name="constantVoltage.p.i"
+    valueReference="88"
+    description="Current flowing into the pin"
+    >
+    <Real unit="A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "78" -->
+  <ScalarVariable
+    name="emf.flange.phi"
+    valueReference="1"
+    description="Absolute rotation angle of flange"
+    >
+    <Real unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "79" -->
+  <ScalarVariable
+    name="emf.flange.tau"
+    valueReference="6"
+    description="Cut torque in the flange"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "80" -->
+  <ScalarVariable
+    name="emf.i"
+    valueReference="46"
+    description="Current flowing from positive to negative pin"
+    >
+    <Real unit="A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "81" -->
+  <ScalarVariable
+    name="emf.n.i"
+    valueReference="95"
+    description="Current flowing into the pin"
+    >
+    <Real unit="A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "82" -->
+  <ScalarVariable
+    name="emf.n.v"
+    valueReference="10"
+    description="Potential at the pin"
+    >
+    <Real unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "83" -->
+  <ScalarVariable
+    name="emf.p.i"
+    valueReference="46"
+    description="Current flowing into the pin"
+    >
+    <Real unit="A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "84" -->
+  <ScalarVariable
+    name="emf.p.v"
+    valueReference="7"
+    description="Potential at the pin"
+    >
+    <Real unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "85" -->
+  <ScalarVariable
+    name="emf.tauElectrical"
+    valueReference="99"
+    description="Electrical torque"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "86" -->
+  <ScalarVariable
+    name="inertia.flange_a.phi"
+    valueReference="1"
+    description="Absolute rotation angle of flange"
+    >
+    <Real unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "87" -->
+  <ScalarVariable
+    name="inertia.flange_b.phi"
+    valueReference="1"
+    description="Absolute rotation angle of flange"
+    >
+    <Real unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "88" -->
+  <ScalarVariable
+    name="inertia.flange_b.tau"
+    valueReference="102"
+    description="Cut torque in the flange"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "89" -->
+  <ScalarVariable
+    name="inertia.phi"
+    valueReference="1"
+    description="Absolute rotation angle of component"
+    >
+    <Real unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "90" -->
+  <ScalarVariable
+    name="lossyGear.flange_a.phi"
+    valueReference="1"
+    description="Absolute rotation angle of flange"
+    >
+    <Real unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "91" -->
+  <ScalarVariable
+    name="lossyGear.flange_b.phi"
+    valueReference="22"
+    description="Absolute rotation angle of flange"
+    >
+    <Real unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "92" -->
+  <ScalarVariable
+    name="lossyGear.flange_b.tau"
+    valueReference="50"
+    description="Cut torque in the flange"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "93" -->
+  <ScalarVariable
+    name="lossyGear.w_a"
+    valueReference="0"
+    description="Angular velocity of flange_a with respect to support"
+    >
+    <Real unit="rad/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "94" -->
+  <ScalarVariable
+    name="ramp.y"
+    valueReference="50"
+    description="Connector of Real output signal"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "95" -->
+  <ScalarVariable
+    name="resistor.n.i"
+    valueReference="109"
+    description="Current flowing into the pin"
+    >
+    <Real unit="A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "96" -->
+  <ScalarVariable
+    name="resistor.n.v"
+    valueReference="7"
+    description="Potential at the pin"
+    >
+    <Real unit="V"/>
+  </ScalarVariable>
+  <!-- Index of variable = "97" -->
+  <ScalarVariable
+    name="resistor.p.i"
+    valueReference="46"
+    description="Current flowing into the pin"
+    >
+    <Real unit="A"/>
+  </ScalarVariable>
+  <!-- Index of variable = "98" -->
+  <ScalarVariable
+    name="torque.flange.phi"
+    valueReference="1"
+    description="Absolute rotation angle of flange"
+    >
+    <Real unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "99" -->
+  <ScalarVariable
+    name="torque2.flange.phi"
+    valueReference="22"
+    description="Absolute rotation angle of flange"
+    >
+    <Real unit="rad"/>
+  </ScalarVariable>
+  <!-- Index of variable = "100" -->
+  <ScalarVariable
+    name="torque2.flange.tau"
+    valueReference="114"
+    description="Cut torque in the flange"
+    >
+    <Real unit="N.m"/>
+  </ScalarVariable>
+  <!-- Index of variable = "101" -->
+  <ScalarVariable
+    name="lossyGear.mode"
+    valueReference="0"
+    description="Mode of friction element (unknown, not active, forward/backward rolling, stuck)"
+    variability="discrete"
+    initial="exact">
+    <Integer start="2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "102" -->
+  <ScalarVariable
+    name="inertia.stateSelect"
+    valueReference="1"
+    description="Priority to use phi and w as states"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="StateSelect"/>
+  </ScalarVariable>
+  <!-- Index of variable = "103" -->
+  <ScalarVariable
+    name="lossyGear.ideal"
+    valueReference="0"
+    description="= true, if losses are neglected (that is lossTable = [0, 1, 1, 0, 0])"
+    variability="discrete"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "104" -->
+  <ScalarVariable
+    name="lossyGear.locked"
+    valueReference="1"
+    description="= true, if gear is locked"
+    variability="discrete"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "105" -->
+  <ScalarVariable
+    name="lossyGear.startBackward"
+    valueReference="2"
+    description="= true, if starting to roll backward"
+    variability="discrete"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "106" -->
+  <ScalarVariable
+    name="lossyGear.startForward"
+    valueReference="3"
+    description="= true, if starting to roll forward"
+    variability="discrete"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "107" -->
+  <ScalarVariable
+    name="lossyGear.tau_aPos"
+    valueReference="4"
+    description="Only for backwards compatibility (was previously: true, if torque of flange_a is not negative)"
+    variability="discrete"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "108" -->
+  <ScalarVariable
+    name="emf.useSupport"
+    valueReference="5"
+    description="= true, if support flange enabled, otherwise implicitly grounded"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "109" -->
+  <ScalarVariable
+    name="lossyGear.useHeatPort"
+    valueReference="6"
+    description="= true, if heatPort is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "110" -->
+  <ScalarVariable
+    name="lossyGear.useSupport"
+    valueReference="7"
+    description="= true, if support flange enabled, otherwise implicitly grounded"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "111" -->
+  <ScalarVariable
+    name="resistor.useHeatPort"
+    valueReference="8"
+    description="= true, if heatPort is enabled"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "112" -->
+  <ScalarVariable
+    name="torque.useSupport"
+    valueReference="9"
+    description="= true, if support flange enabled, otherwise implicitly grounded"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "113" -->
+  <ScalarVariable
+    name="torque2.useSupport"
+    valueReference="10"
+    description="= true, if support flange enabled, otherwise implicitly grounded"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "114" -->
+  <ScalarVariable
+    name="lossyGear.tau_etaPos"
+    valueReference="4"
+    description="= true, if torque tau_eta is not negative"
+    variability="discrete"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Derivatives>
+      <Unknown index="3" dependencies="1" dependenciesKind="dependent" />
+      <Unknown index="4" dependencies="1" dependenciesKind="dependent" />
+    </Derivatives>
+    <InitialUnknowns>
+      <Unknown index="3" dependencies="1 49 51 54 55 56 57 58 59 60 61 62 63 64 65 66 69 70" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="4" dependencies="1" dependenciesKind="dependent" />
+      <Unknown index="50" dependencies="49" dependenciesKind="dependent" />
+      <Unknown index="52" dependencies="51" dependenciesKind="dependent" />
+      <Unknown index="53" dependencies="51" dependenciesKind="dependent" />
+      <Unknown index="67" dependencies="69" dependenciesKind="dependent" />
+      <Unknown index="68" dependencies="" dependenciesKind="" />
+      <Unknown index="71" dependencies="51" dependenciesKind="dependent" />
+      <Unknown index="72" dependencies="49" dependenciesKind="dependent" />
+      <Unknown index="73" dependencies="49" dependenciesKind="dependent" />
+      <Unknown index="102" dependencies="" dependenciesKind="" />
+      <Unknown index="108" dependencies="" dependenciesKind="" />
+      <Unknown index="109" dependencies="" dependenciesKind="" />
+      <Unknown index="110" dependencies="" dependenciesKind="" />
+      <Unknown index="111" dependencies="" dependenciesKind="" />
+      <Unknown index="112" dependencies="" dependenciesKind="" />
+      <Unknown index="113" dependencies="" dependenciesKind="" />
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>

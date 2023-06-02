@@ -3,23 +3,43 @@ import subprocess
 import os
 import shutil
 
-def compilation(model):
-    path_FMU='C:/Users/Lizab/workspace/OpenModelica/FMU/'+model+'_FMU/'
-    source_dir = path_FMU + 'sources'
-    build_dir = path_FMU + 'sources/build_cmake'
+def simulation(model):
+    os.chdir('C:/Users/Lizab/workspace/OpenModelica/Result') #To change
+    omc = OMCSessionZMQ()
+    cmds = [
+        'loadFile(getInstallationDirectoryPath() + "/share/doc/omc/testmodels/" + "{}.mo".format(model))', #load Modelica Mode
+        'simulate({}.mo.format(model))', #simulate the model
+        "plot(inertia.a)" #plot an example of variable
+    ]
 
+    '''for cmd in cmds:
+        answer = omc.sendExpression(cmd)
+        print("\n{}:\n{}".format(cmd, answer))'''
+    #To visualize the results change the cmds commands : 
+    # cmds = [
+    #     'loadFile(getInstallationDirectoryPath() + "/share/doc/omc/testmodels/" + "{}.mo".format(model))', #load Modelica Mode
+    #     "simulate(model)", #simulate the model
+    #     "plot(inertia.a)" #plot an example of variable
+    # ]
+    # And uncoment the loop 'for' above
+ 
+def compilationFMU(model):
+    path_FMU='C:/Users/Lizab/workspace/OpenModelica/FMU/'+model+'_FMU/' #directory where the FMU will be compiled
+    source_dir = path_FMU + 'sources'  # directory containing the source files of the FMU.
+    build_dir = path_FMU + 'sources/build_cmake' #directory where the FMU will be built
 
     omc = OMCSessionZMQ()
+  
     source_dir = path_FMU + 'sources'
     build_dir = path_FMU + 'sources/build_cmake'
 
     os.chdir(source_dir)
     command = [
         'cmake',
-        '-S',
-        '.',
-        '-B',
-        'build_cmake',
+        '-S', 
+        '.', #source directory
+        '-B', 
+        'build_cmake', #build directory
         '-D',
         'RUNTIME_DEPENDENCIES_LEVEL=modelica',
         '-D',
@@ -27,18 +47,19 @@ def compilation(model):
         '-D',
         'CMAKE_CXX_COMPILER=cl',  # Use 'cl' for MSVC compiler
         '-D',
-        'FMI_INTERFACE_HEADER_FILES_DIRECTORY=C:/Programmes/OpenModelica/include/omc/c/fmi/'
+        'FMI_INTERFACE_HEADER_FILES_DIRECTORY=C:/Programmes/OpenModelica/include/omc/c/fmi/' #to change with your own path
     ]
 
     modelica_script = """
     list(OpenModelica.Scripting.importFMU, interfaceOnly=true);
     """
+    
     result = omc.execute(modelica_script)
     print(result)
-
-    subprocess.run(command)
-    subprocess.run(["cmake", "-E", "make_directory", build_dir], check=True)
-    subprocess.run(["cmake", source_dir], cwd=build_dir, check=True)
+    
+    subprocess.run(command) #execute the cmake command
+    subprocess.run(["cmake", "-E", "make_directory", build_dir], check=True) #creates the build directory ifit does not exist
+    subprocess.run(["cmake", source_dir], cwd=build_dir, check=True) #Runs cmake from the build directory to generate the build system files.
 
 #Does not work
 '''
@@ -77,5 +98,5 @@ replace_word_in_file(source_dir + '/external_solvers/ilaenv.c', 'name_len = strl
 replace_word_in_file(source_dir + '/external_solvers/ilaenv.c', 'opts_len = strlen (opts)', 'opts_len = (ftnlen)strlen (opts)')
 replace_word_in_file(source_dir + '/external_solvers/iparmq.c', 'r__1 = log((real) nh) / log(2.f);', 'r__1 = (real)(log((double)nh) / log(2.0));')
 
-subprocess.run(["cmake", "--build", ".", "--config", "Release", "--", "/p:CL_MPcount=1"], cwd=build_dir, check=True)
+subprocess.run(["cmake", "--build", ".", "--config", "Release", "--", "/p:CL_MPcount=1"], cwd=build_dir, check=True) #Builds the FMU using the generated build system
 '''

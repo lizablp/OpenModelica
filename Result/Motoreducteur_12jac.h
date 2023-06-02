@@ -6,14 +6,14 @@ extern "C" {
 #endif
 
 /* Jacobian Variables */
-#define Motoreducteur_INDEX_JAC_NLSJac0 0
-int Motoreducteur_functionJacNLSJac0_column(DATA* data, threadData_t *threadData, ANALYTIC_JACOBIAN *thisJacobian, ANALYTIC_JACOBIAN *parentJacobian);
-int Motoreducteur_initialAnalyticJacobianNLSJac0(DATA* data, threadData_t *threadData, ANALYTIC_JACOBIAN *jacobian);
+#define Motoreducteur_INDEX_JAC_NLSJac2 0
+int Motoreducteur_functionJacNLSJac2_column(DATA* data, threadData_t *threadData, ANALYTIC_JACOBIAN *thisJacobian, ANALYTIC_JACOBIAN *parentJacobian);
+int Motoreducteur_initialAnalyticJacobianNLSJac2(DATA* data, threadData_t *threadData, ANALYTIC_JACOBIAN *jacobian);
 
 
-#define Motoreducteur_INDEX_JAC_NLSJac1 1
-int Motoreducteur_functionJacNLSJac1_column(DATA* data, threadData_t *threadData, ANALYTIC_JACOBIAN *thisJacobian, ANALYTIC_JACOBIAN *parentJacobian);
-int Motoreducteur_initialAnalyticJacobianNLSJac1(DATA* data, threadData_t *threadData, ANALYTIC_JACOBIAN *jacobian);
+#define Motoreducteur_INDEX_JAC_NLSJac3 1
+int Motoreducteur_functionJacNLSJac3_column(DATA* data, threadData_t *threadData, ANALYTIC_JACOBIAN *thisJacobian, ANALYTIC_JACOBIAN *parentJacobian);
+int Motoreducteur_initialAnalyticJacobianNLSJac3(DATA* data, threadData_t *threadData, ANALYTIC_JACOBIAN *jacobian);
 
 
 #define Motoreducteur_INDEX_JAC_H 2

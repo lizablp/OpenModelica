@@ -973,9 +973,9 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_2_name,16,_OMC_LIT_RESOURCE_2_na
 static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_2_dir,86,_OMC_LIT_RESOURCE_2_dir_data);
 
 #define _OMC_LIT_RESOURCE_3_name_data "Motoreducteur"
-#define _OMC_LIT_RESOURCE_3_dir_data "C:/Programmes/OpenModelica/share/omc/testmodels"
+#define _OMC_LIT_RESOURCE_3_dir_data "C:/Programmes/OpenModelica/share/doc/omc/testmodels"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_3_name,13,_OMC_LIT_RESOURCE_3_name_data);
-static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_3_dir,47,_OMC_LIT_RESOURCE_3_dir_data);
+static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_3_dir,51,_OMC_LIT_RESOURCE_3_dir_data);
 
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_RESOURCES,8,MMC_ARRAY_TAG) {MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_0_name), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_0_dir), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_1_name), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_1_dir), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_2_name), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_2_dir), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_3_name), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_3_dir)}};
 void Motoreducteur_setupDataStruc(DATA *data, threadData_t *threadData)
@@ -987,8 +987,8 @@ void Motoreducteur_setupDataStruc(DATA *data, threadData_t *threadData)
   data->modelData->modelName = "Motoreducteur";
   data->modelData->modelFilePrefix = "Motoreducteur";
   data->modelData->resultFileName = NULL;
-  data->modelData->modelDir = "C:/Programmes/OpenModelica/share/omc/testmodels";
-  data->modelData->modelGUID = "{acf7d4a0-4b27-4e24-aab5-bdb739d43288}";
+  data->modelData->modelDir = "C:/Programmes/OpenModelica/share/doc/omc/testmodels";
+  data->modelData->modelGUID = "{ce83cb2a-df8b-4f51-a4c3-a0e11b931ee5}";
   #if defined(OPENMODELICA_XML_FROM_FILE_AT_RUNTIME)
   data->modelData->initXMLData = NULL;
   data->modelData->modelDataXml.infoXMLData = NULL;

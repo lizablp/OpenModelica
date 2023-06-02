@@ -9,11 +9,11 @@
 
   OPENMODELICAHOME                    = "C:/Programmes/OpenModelica"
 
-  guid                                = "{acf7d4a0-4b27-4e24-aab5-bdb739d43288}"
+  guid                                = "{ce83cb2a-df8b-4f51-a4c3-a0e11b931ee5}"
 
   description                         = ""
   generationTool                      = "OpenModelica Compiler OpenModelica v1.21.0 (64-bit)"
-  generationDateAndTime               = "2023-05-30T20:21:43Z"
+  generationDateAndTime               = "2023-06-02T14:45:02Z"
 
   variableNamingConvention            = "structured"
 
@@ -51,7 +51,7 @@
     stepSize       = "0.002"
     tolerance      = "1e-06"
     solver        = "dassl"
-    outputFormat      = "csv"
+    outputFormat      = "mat"
     variableFilter      = ".*" />
 
   <!-- variables in the model -->

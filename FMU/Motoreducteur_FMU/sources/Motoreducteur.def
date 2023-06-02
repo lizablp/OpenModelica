@@ -1,0 +1,54 @@
+EXPORTS
+  ;***************************************************
+  ;Common Functions
+  ;****************************************************
+  Motoreducteur_fmiGetTypesPlatform @1
+  Motoreducteur_fmiGetVersion @2
+  Motoreducteur_fmiSetDebugLogging @3
+  Motoreducteur_fmiInstantiate @4
+  Motoreducteur_fmiFreeInstance @5
+  Motoreducteur_fmiSetupExperiment @6
+  Motoreducteur_fmiEnterInitializationMode @7
+  Motoreducteur_fmiExitInitializationMode @8
+  Motoreducteur_fmiTerminate @9
+  Motoreducteur_fmiReset @10
+  Motoreducteur_fmiGetReal @11
+  Motoreducteur_fmiGetInteger @12
+  Motoreducteur_fmiGetBoolean @13
+  Motoreducteur_fmiGetString @14
+  Motoreducteur_fmiSetReal @15
+  Motoreducteur_fmiSetInteger @16
+  Motoreducteur_fmiSetBoolean @17
+  Motoreducteur_fmiSetString @18
+  Motoreducteur_fmiGetFMUstate @19
+  Motoreducteur_fmiSetFMUstate @20
+  Motoreducteur_fmiFreeFMUstate @21
+  Motoreducteur_fmiSerializedFMUstateSize @22
+  Motoreducteur_fmiSerializeFMUstate @23
+  Motoreducteur_fmiDeSerializeFMUstate @24
+  Motoreducteur_fmiGetDirectionalDerivative @25
+  ;***************************************************
+  ;Functions for FMI for Model Exchange
+  ;****************************************************
+  Motoreducteur_fmiEnterEventMode @26
+  Motoreducteur_fmiNewDiscreteStates @27
+  Motoreducteur_fmiEnterContinuousTimeMode @28
+  Motoreducteur_fmiCompletedIntegratorStep @29
+  Motoreducteur_fmiSetTime @30
+  Motoreducteur_fmiSetContinuousStates @31
+  Motoreducteur_fmiGetDerivatives @32
+  Motoreducteur_fmiGetEventIndicators @33
+  Motoreducteur_fmiGetContinuousStates @34
+  Motoreducteur_fmiGetNominalsOfContinuousStates @35
+  ;***************************************************
+  ;Functions for FMI for Co-Simulation
+  ;****************************************************
+  Motoreducteur_fmiSetRealInputDerivatives @36
+  Motoreducteur_fmiGetRealOutputDerivatives @37
+  Motoreducteur_fmiDoStep @38
+  Motoreducteur_fmiCancelStep @39
+  Motoreducteur_fmiGetStatus @40
+  Motoreducteur_fmiGetRealStatus @41
+  Motoreducteur_fmiGetIntegerStatus @42
+  Motoreducteur_fmiGetBooleanStatus @43
+  Motoreducteur_fmiGetStringStatus @44

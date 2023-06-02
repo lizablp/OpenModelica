@@ -90,9 +90,6 @@ def replace_word_in_file(file_path, old_word, new_word):
     with open(file_path, 'w') as file:
         file.write(modified_content)
 
-folder_path = '/path/to/folder'  # Replace with the actual folder path
-word_to_add = '# New Word'
-
 replace_word_in_file(source_dir + '/gc/omc_gc.h', 'pthread.h', 'thread')
 replace_word_in_file(source_dir + '/gc/memory_pool.c', 'pthread.h', 'thread')
 replace_word_in_file(source_dir + '/util/omc_init.h', 'pthread.h', 'thread')
@@ -120,14 +117,14 @@ new_ext='.cpp'
 
 subprocess.run(["cmake", "-E", "make_directory", build_dir], check=True)
 subprocess.run(["cmake", source_dir], cwd=build_dir, check=True)
-
+'''
 def changeExtension(folder):
     for filename in os.listdir(folder):
         if filename.endswith(current_ext):
             base = os.path.splitext(filename)[0]
             os.rename(os.path.join(folder, filename), os.path.join(folder, base + new_ext))
             
-'''changeExtension(folder)
+changeExtension(folder)
 changeExtension(folder2)
 changeExtension(folder3)
 changeExtension(folder4)
@@ -141,7 +138,7 @@ changeExtension(folder9)
 replace_word_in_file(source_dir + '/build_cmake/Motoreducteur.vcxproj', '.c', '.cpp')  
 replace_word_in_file(source_dir + '/build_cmake/Motoreducteur.vcxproj', 'http://schemas.microsoft.cppom/developer/msbuild/2003', 'http://schemas.microsoft.com/developer/msbuild/2003')                     
 replace_word_in_file(source_dir + '/CMakeLists.txt', '*.c', '*.cpp')  
-'''
+
 def remove_word_from_file(file_path, target_word):
     with open(file_path, 'r') as file:
         content = file.read()
@@ -186,13 +183,13 @@ def remove_word_from_file(file_path, target_word):
 #                 with open(file_path, 'w') as file:
 #                     file.writelines(lines)
 
-
+'''
 #subprocess.run(["cmake", "--build", "."], cwd=build_dir, check=True)
 
 subprocess.run(["cmake", "--build", ".", "--config", "Release"], cwd=build_dir, check=True)
 
 
-
+'''
 def change_file_extension(filename, new_extension):
     # Split the file name and current extension
     name, old_extension = os.path.splitext(filename)
@@ -202,8 +199,9 @@ def change_file_extension(filename, new_extension):
 
     # Rename the file
     os.rename(filename, new_filename)
+   
 # Example usage
-'''change_file_extension("C:/Users/Lizab/workspace/OpenModelica/FMU/Motoreducteur_FMU/sources/build_cmake/Modelica_Fluid_Examples_HeatingSystem.vcxproj", ".vcproj")
+change_file_extension("C:/Users/Lizab/workspace/OpenModelica/FMU/Motoreducteur_FMU/sources/build_cmake/Modelica_Fluid_Examples_HeatingSystem.vcxproj", ".vcproj")
 os.rename("C:/Users/Lizab/workspace/OpenModelica/FMU/Motoreducteur_FMU/sources/build_cmake/ALL_BUILD.vcxproj.filters", "C:/Users/Lizab/workspace/OpenModelica/FMU/Motoreducteur_FMU/sources/build_cmake/ALL_BUILD.vcproj.filters")
 change_file_extension("C:/Users/Lizab/workspace/OpenModelica/FMU/Motoreducteur_FMU/sources/build_cmake/ALL_BUILD.vcxproj.filters", ".vcproj.filters")
 change_file_extension("C:/Users/Lizab/workspace/OpenModelica/FMU/Motoreducteur_FMU/sources/build_cmake/create_zip.vcxproj", ".vcproj")
@@ -211,4 +209,3 @@ change_file_extension("C:/Users/Lizab/workspace/OpenModelica/FMU/Motoreducteur_F
 change_file_extension("C:/Users/Lizab/workspace/OpenModelica/FMU/Motoreducteur_FMU/sources/build_cmake/ZERO_CHECK.vcxproj", ".vcproj")
 '''            
             
-

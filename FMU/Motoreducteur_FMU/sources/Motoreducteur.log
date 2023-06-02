@@ -1,0 +1,289 @@
+mingw32-make: Entering directory 'C:/Users/Lizab/WORKSP~1/OPENMO~1/FMU/MOTORE~1/sources'
+clang  -Os -Wno-parentheses-equality -falign-functions -mstackrealign -msse2 -mfpmath=sse     -I"C:/Programmes/OpenModelica/include/omc/c" -I"C:/Programmes/OpenModelica/include/omc" -I. -DOPENMODELICA_XML_FROM_FILE_AT_RUNTIME -DOMC_MODEL_PREFIX=Motoreducteur -DOMC_NUM_MIXED_SYSTEMS=0 -DOMC_NUM_LINEAR_SYSTEMS=1 -DOMC_NUM_NONLINEAR_SYSTEMS=2 -DOMC_NDELAY_EXPRESSIONS=0 -DOMC_NVAR_STRING=0  -c -o Motoreducteur.o Motoreducteur.c
+clang  -Os -Wno-parentheses-equality -falign-functions -mstackrealign -msse2 -mfpmath=sse     -I"C:/Programmes/OpenModelica/include/omc/c" -I"C:/Programmes/OpenModelica/include/omc" -I. -DOPENMODELICA_XML_FROM_FILE_AT_RUNTIME -DOMC_MODEL_PREFIX=Motoreducteur -DOMC_NUM_MIXED_SYSTEMS=0 -DOMC_NUM_LINEAR_SYSTEMS=1 -DOMC_NUM_NONLINEAR_SYSTEMS=2 -DOMC_NDELAY_EXPRESSIONS=0 -DOMC_NVAR_STRING=0  -c -o Motoreducteur_functions.o Motoreducteur_functions.c
+clang  -Os -Wno-parentheses-equality -falign-functions -mstackrealign -msse2 -mfpmath=sse     -I"C:/Programmes/OpenModelica/include/omc/c" -I"C:/Programmes/OpenModelica/include/omc" -I. -DOPENMODELICA_XML_FROM_FILE_AT_RUNTIME -DOMC_MODEL_PREFIX=Motoreducteur -DOMC_NUM_MIXED_SYSTEMS=0 -DOMC_NUM_LINEAR_SYSTEMS=1 -DOMC_NUM_NONLINEAR_SYSTEMS=2 -DOMC_NDELAY_EXPRESSIONS=0 -DOMC_NVAR_STRING=0  -c -o Motoreducteur_records.o Motoreducteur_records.c
+clang  -Os -Wno-parentheses-equality -falign-functions -mstackrealign -msse2 -mfpmath=sse     -I"C:/Programmes/OpenModelica/include/omc/c" -I"C:/Programmes/OpenModelica/include/omc" -I. -DOPENMODELICA_XML_FROM_FILE_AT_RUNTIME -DOMC_MODEL_PREFIX=Motoreducteur -DOMC_NUM_MIXED_SYSTEMS=0 -DOMC_NUM_LINEAR_SYSTEMS=1 -DOMC_NUM_NONLINEAR_SYSTEMS=2 -DOMC_NDELAY_EXPRESSIONS=0 -DOMC_NVAR_STRING=0  -c -o Motoreducteur_01exo.o Motoreducteur_01exo.c
+/usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (French_France.1252)
+/usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (French_France.1252)
+/usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (French_France.1252)
+/usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (French_France.1252)
+In file included from Motoreducteur.c:7:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:44:
+./omc_simulation_settings.h:3:9: warning: 'OMC_NUM_LINEAR_SYSTEMS' macro redefined [-Wmacro-redefined]
+#define OMC_NUM_LINEAR_SYSTEMS 0
+        ^
+<command line>:4:9: note: previous definition is here
+#define OMC_NUM_LINEAR_SYSTEMS 1
+        ^
+In file included from Motoreducteur.c:7:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:44:
+./omc_simulation_settings.h:8:9: warning: 'OMC_MODEL_PREFIX' macro redefined [-Wmacro-redefined]
+#define OMC_MODEL_PREFIX "Motoreducteur"
+        ^
+<command line>:2:9: note: previous definition is here
+#define OMC_MODEL_PREFIX Motoreducteur
+        ^
+In file included from Motoreducteur.c:7:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:71:
+In file included from ./gc/../openmodelica_types.h:161:
+./gc/omc_gc.h:223:28: warning: expression result unused [-Wunused-value]
+  GC_register_displacement(0);
+                           ^
+./gc/omc_gc.h:227:34: warning: expression result unused [-Wunused-value]
+  GC_set_force_unmap_on_gcollect(1);
+                                 ^
+In file included from Motoreducteur_functions.c:1:
+./omc_simulation_settings.h:3:9: warning: 'OMC_NUM_LINEAR_SYSTEMS' macro redefined [-Wmacro-redefined]
+#define OMC_NUM_LINEAR_SYSTEMS 0
+        ^
+<command line>:4:9: note: previous definition is here
+#define OMC_NUM_LINEAR_SYSTEMS 1
+        ^
+In file included from Motoreducteur_functions.c:1:
+./omc_simulation_settings.h:8:9: warning: 'OMC_MODEL_PREFIX' macro redefined [-Wmacro-redefined]
+#define OMC_MODEL_PREFIX "Motoreducteur"
+        ^
+<command line>:2:9: note: previous definition is here
+#define OMC_MODEL_PREFIX Motoreducteur
+        ^
+In file included from Motoreducteur_records.c:3:
+./omc_simulation_settings.h:3:9: warning: 'OMC_NUM_LINEAR_SYSTEMS' macro redefined [-Wmacro-redefined]
+#define OMC_NUM_LINEAR_SYSTEMS 0
+        ^
+<command line>:4:9: note: previous definition is here
+#define OMC_NUM_LINEAR_SYSTEMS 1
+        ^
+In file included from Motoreducteur_records.c:3:
+./omc_simulation_settings.h:8:9: warning: 'OMC_MODEL_PREFIX' macro redefined [-Wmacro-redefined]
+#define OMC_MODEL_PREFIX "Motoreducteur"
+        ^
+<command line>:2:9: note: previous definition is here
+#define OMC_MODEL_PREFIX Motoreducteur
+        ^
+In file included from Motoreducteur_01exo.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:44:
+./omc_simulation_settings.h:3:9: warning: 'OMC_NUM_LINEAR_SYSTEMS' macro redefined [-Wmacro-redefined]
+#define OMC_NUM_LINEAR_SYSTEMS 0
+        ^
+<command line>:4:9: note: previous definition is here
+#define OMC_NUM_LINEAR_SYSTEMS 1
+        ^
+In file included from Motoreducteur_01exo.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:44:
+./omc_simulation_settings.h:8:9: warning: 'OMC_MODEL_PREFIX' macro redefined [-Wmacro-redefined]
+#define OMC_MODEL_PREFIX "Motoreducteur"
+        ^
+<command line>:2:9: note: previous definition is here
+#define OMC_MODEL_PREFIX Motoreducteur
+        ^
+In file included from Motoreducteur_functions.c:2:
+In file included from ./Motoreducteur_functions.h:3:
+In file included from ./meta/meta_modelica.h:49:
+./gc/omc_gc.h:223:28: warning: expression result unused [-Wunused-value]
+  GC_register_displacement(0);
+                           ^
+./gc/omc_gc.h:227:34: warning: expression result unused [-Wunused-value]
+  GC_set_force_unmap_on_gcollect(1);
+                                 ^
+In file included from Motoreducteur_records.c:4:
+In file included from ./meta/meta_modelica.h:49:
+./gc/omc_gc.h:223:28: warning: expression result unused [-Wunused-value]
+  GC_register_displacement(0);
+                           ^
+./gc/omc_gc.h:227:34: warning: expression result unused [-Wunused-value]
+  GC_set_force_unmap_on_gcollect(1);
+                                 ^
+In file included from Motoreducteur_01exo.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:71:
+In file included from ./gc/../openmodelica_types.h:161:
+./gc/omc_gc.h:223:28: warning: expression result unused [-Wunused-value]
+  GC_register_displacement(0);
+                           ^
+./gc/omc_gc.h:227:34: warning: expression result unused [-Wunused-value]
+  GC_set_force_unmap_on_gcollect(1);
+                                 ^
+4 warnings generated.
+4 warnings generated.
+clang  -Os -Wno-parentheses-equality -falign-functions -mstackrealign -msse2 -mfpmath=sse     -I"C:/Programmes/OpenModelica/include/omc/c" -I"C:/Programmes/OpenModelica/include/omc" -I. -DOPENMODELICA_XML_FROM_FILE_AT_RUNTIME -DOMC_MODEL_PREFIX=Motoreducteur -DOMC_NUM_MIXED_SYSTEMS=0 -DOMC_NUM_LINEAR_SYSTEMS=1 -DOMC_NUM_NONLINEAR_SYSTEMS=2 -DOMC_NDELAY_EXPRESSIONS=0 -DOMC_NVAR_STRING=0  -c -o Motoreducteur_02nls.o Motoreducteur_02nls.c
+clang  -Os -Wno-parentheses-equality -falign-functions -mstackrealign -msse2 -mfpmath=sse     -I"C:/Programmes/OpenModelica/include/omc/c" -I"C:/Programmes/OpenModelica/include/omc" -I. -DOPENMODELICA_XML_FROM_FILE_AT_RUNTIME -DOMC_MODEL_PREFIX=Motoreducteur -DOMC_NUM_MIXED_SYSTEMS=0 -DOMC_NUM_LINEAR_SYSTEMS=1 -DOMC_NUM_NONLINEAR_SYSTEMS=2 -DOMC_NDELAY_EXPRESSIONS=0 -DOMC_NVAR_STRING=0  -c -o Motoreducteur_03lsy.o Motoreducteur_03lsy.c
+4 warnings generated.
+/usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (French_France.1252)
+/usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (French_France.1252)
+clang  -Os -Wno-parentheses-equality -falign-functions -mstackrealign -msse2 -mfpmath=sse     -I"C:/Programmes/OpenModelica/include/omc/c" -I"C:/Programmes/OpenModelica/include/omc" -I. -DOPENMODELICA_XML_FROM_FILE_AT_RUNTIME -DOMC_MODEL_PREFIX=Motoreducteur -DOMC_NUM_MIXED_SYSTEMS=0 -DOMC_NUM_LINEAR_SYSTEMS=1 -DOMC_NUM_NONLINEAR_SYSTEMS=2 -DOMC_NDELAY_EXPRESSIONS=0 -DOMC_NVAR_STRING=0  -c -o Motoreducteur_04set.o Motoreducteur_04set.c
+In file included from Motoreducteur_02nls.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:44:
+./omc_simulation_settings.h:3:9: warning: 'OMC_NUM_LINEAR_SYSTEMS' macro redefined [-Wmacro-redefined]
+#define OMC_NUM_LINEAR_SYSTEMS 0
+        ^
+<command line>:4:9: note: previous definition is here
+#define OMC_NUM_LINEAR_SYSTEMS 1
+        ^
+In file included from Motoreducteur_02nls.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:44:
+./omc_simulation_settings.h:8:9: warning: 'OMC_MODEL_PREFIX' macro redefined [-Wmacro-redefined]
+#define OMC_MODEL_PREFIX "Motoreducteur"
+        ^
+<command line>:2:9: note: previous definition is here
+#define OMC_MODEL_PREFIX Motoreducteur
+        ^
+In file included from Motoreducteur_03lsy.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:44:
+./omc_simulation_settings.h:3:9: warning: 'OMC_NUM_LINEAR_SYSTEMS' macro redefined [-Wmacro-redefined]
+#define OMC_NUM_LINEAR_SYSTEMS 0
+        ^
+<command line>:4:9: note: previous definition is here
+#define OMC_NUM_LINEAR_SYSTEMS 1
+        ^
+In file included from Motoreducteur_03lsy.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:44:
+./omc_simulation_settings.h:8:9: warning: 'OMC_MODEL_PREFIX' macro redefined [-Wmacro-redefined]
+#define OMC_MODEL_PREFIX "Motoreducteur"
+        ^
+<command line>:2:9: note: previous definition is here
+#define OMC_MODEL_PREFIX Motoreducteur
+        ^
+/usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (French_France.1252)
+In file included from Motoreducteur_02nls.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:71:
+In file included from ./gc/../openmodelica_types.h:161:
+./gc/omc_gc.h:223:28: warning: expression result unused [-Wunused-value]
+  GC_register_displacement(0);
+                           ^
+./gc/omc_gc.h:227:34: warning: expression result unused [-Wunused-value]
+  GC_set_force_unmap_on_gcollect(1);
+                                 ^
+In file included from Motoreducteur_04set.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:44:
+./omc_simulation_settings.h:3:9: warning: 'OMC_NUM_LINEAR_SYSTEMS' macro redefined [-Wmacro-redefined]
+#define OMC_NUM_LINEAR_SYSTEMS 0
+        ^
+<command line>:4:9: note: previous definition is here
+#define OMC_NUM_LINEAR_SYSTEMS 1
+        ^
+In file included from Motoreducteur_04set.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:44:
+./omc_simulation_settings.h:8:9: warning: 'OMC_MODEL_PREFIX' macro redefined [-Wmacro-redefined]
+#define OMC_MODEL_PREFIX "Motoreducteur"
+        ^
+<command line>:2:9: note: previous definition is here
+#define OMC_MODEL_PREFIX Motoreducteur
+        ^
+In file included from Motoreducteur_03lsy.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:71:
+In file included from ./gc/../openmodelica_types.h:161:
+./gc/omc_gc.h:223:28: warning: expression result unused [-Wunused-value]
+  GC_register_displacement(0);
+                           ^
+./gc/omc_gc.h:227:34: warning: expression result unused [-Wunused-value]
+  GC_set_force_unmap_on_gcollect(1);
+                                 ^
+In file included from Motoreducteur_04set.c:2:
+In file included from ./Motoreducteur_model.h:5:
+In file included from ./openmodelica.h:71:
+In file included from ./gc/../openmodelica_types.h:161:
+./gc/omc_gc.h:223:28: warning: expression result unused [-Wunused-value]
+  GC_register_displacement(0);
+                           ^
+./gc/omc_gc.h:227:34: warning: expression result unused [-Wunused-value]
+  GC_set_force_unmap_on_gcollect(1);
+                                 ^
+Motoreducteur_03lsy.c:117:80: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  ANALYTIC_JACOBIAN* parentJacobian = data->simulationInfo->linearSystemData[0].parDynamicData[omc_get_thread_num()].parentJacobian;
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+Motoreducteur_03lsy.c:154:19: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData->nominal[i] = data->modelData->realVarsData[36].attribute /* lossyGear.tau_eta_p.$pDERA.dummyVarA */.nominal;
+  ~~~~~~~~~~~~~~~~^ ~~~~~~~
+Motoreducteur_03lsy.c:155:19: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData->min[i]     = data->modelData->realVarsData[36].attribute /* lossyGear.tau_eta_p.$pDERA.dummyVarA */.min;
+  ~~~~~~~~~~~~~~~~^ ~~~
+Motoreducteur_03lsy.c:156:19: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData->max[i++]   = data->modelData->realVarsData[36].attribute /* lossyGear.tau_eta_p.$pDERA.dummyVarA */.max;
+  ~~~~~~~~~~~~~~~~^ ~~~
+Motoreducteur_03lsy.c:158:19: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData->nominal[i] = data->modelData->realVarsData[25].attribute /* lossyGear.sa.$pDERA.dummyVarA */.nominal;
+  ~~~~~~~~~~~~~~~~^ ~~~~~~~
+Motoreducteur_03lsy.c:159:19: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData->min[i]     = data->modelData->realVarsData[25].attribute /* lossyGear.sa.$pDERA.dummyVarA */.min;
+  ~~~~~~~~~~~~~~~~^ ~~~
+Motoreducteur_03lsy.c:160:19: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData->max[i++]   = data->modelData->realVarsData[25].attribute /* lossyGear.sa.$pDERA.dummyVarA */.max;
+  ~~~~~~~~~~~~~~~~^ ~~~
+Motoreducteur_03lsy.c:171:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].equationIndex = 222;
+  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+Motoreducteur_03lsy.c:172:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].size = 2;
+  ~~~~~~~~~~~~~~~~~~~^~~~~
+Motoreducteur_03lsy.c:173:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].nnz = 0;
+  ~~~~~~~~~~~~~~~~~~~^~~~
+Motoreducteur_03lsy.c:174:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].method = 1;   /* Symbolic Jacobian available */
+  ~~~~~~~~~~~~~~~~~~~^~~~~~~
+Motoreducteur_03lsy.c:175:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].residualFunc = residualFunc222;
+  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+Motoreducteur_03lsy.c:176:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].strictTearingFunctionCall = NULL;
+  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+Motoreducteur_03lsy.c:177:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].analyticalJacobianColumn = Motoreducteur_functionJacLSJac4_column;
+  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+Motoreducteur_03lsy.c:178:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].initialAnalyticalJacobian = Motoreducteur_initialAnalyticJacobianLSJac4;
+  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+Motoreducteur_03lsy.c:179:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].jacobianIndex = 8 /*jacInx*/;
+  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+Motoreducteur_03lsy.c:180:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].setA = NULL;  //setLinearMatrixA222;
+  ~~~~~~~~~~~~~~~~~~~^~~~~
+Motoreducteur_03lsy.c:181:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].setb = NULL;  //setLinearVectorb222;
+  ~~~~~~~~~~~~~~~~~~~^~~~~
+Motoreducteur_03lsy.c:182:22: error: member reference base type 'LINEAR_SYSTEM_DATA' (aka 'void *') is not a structure or union
+  linearSystemData[0].initializeStaticLSData = initializeStaticLSData222;
+  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+4 warnings and 19 errors generated.
+mingw32-make: *** [<builtin>: Motoreducteur_03lsy.o] Error 1
+mingw32-make: *** Waiting for unfinished jobs....
+4 warnings generated.
+In file included from Motoreducteur.c:13:
+C:/Programmes/OpenModelica/include/omc/c\simulation/solver/perform_simulation.c.inc:253:14: warning: implicit declaration of function 'rt_accumulated' is invalid in C99 [-Wimplicit-function-declaration]
+    tmpdbl = rt_accumulated(SIM_TIMER_STEP);
+             ^
+C:/Programmes/OpenModelica/include/omc/c\simulation/solver/perform_simulation.c.inc:255:36: warning: implicit declaration of function 'rt_ncall_arr' is invalid in C99 [-Wimplicit-function-declaration]
+    flag = flag && total == fwrite(rt_ncall_arr(SIM_TIMER_FIRST_FUNCTION), sizeof(uint32_t), total, mt->fmtInt);
+                                   ^
+C:/Programmes/OpenModelica/include/omc/c\simulation/solver/perform_simulation.c.inc:255:83: error: use of undeclared identifier 'uint32_t'
+    flag = flag && total == fwrite(rt_ncall_arr(SIM_TIMER_FIRST_FUNCTION), sizeof(uint32_t), total, mt->fmtInt);
+                                                                                  ^
+4 warnings generated.
+Motoreducteur.c:883:4: error: use of undeclared identifier 'Motoreducteur_initialLinearSystem'; did you mean 'Motoreducteur_initialNonLinearSystem'?
+   Motoreducteur_initialLinearSystem,    /* initialLinearSystem */
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Motoreducteur_initialNonLinearSystem
+./Motoreducteur_model.h:35:13: note: 'Motoreducteur_initialNonLinearSystem' declared here
+extern void Motoreducteur_initialNonLinearSystem(int nNonLinearSystems, NONLINEAR_SYSTEM_DATA *data);
+            ^
+Motoreducteur.c:883:4: warning: incompatible function pointer types initializing 'void (*)(int, LINEAR_SYSTEM_DATA *)' (aka 'void (*)(int, void **)') with an expression of type 'void (int, NONLINEAR_SYSTEM_DATA *)' (aka 'void (int, struct NONLINEAR_SYSTEM_DATA *)') [-Wincompatible-function-pointer-types]
+   Motoreducteur_initialLinearSystem,    /* initialLinearSystem */
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7 warnings and 2 errors generated.
+mingw32-make: *** [<builtin>: Motoreducteur.o] Error 1
+mingw32-make: Leaving directory 'C:/Users/Lizab/WORKSP~1/OPENMO~1/FMU/MOTORE~1/sources'
+RESULT: 2 
